@@ -1,0 +1,13 @@
+import validator_script
+import validator_sort
+
+if __name__ == '__main__':
+    print('nice')
+    validator = validator_script.Validator()
+
+    validator.load('C:/Users/Admin/Downloads/14.txt')
+    valid = validator.validate()
+    validator_script.write('valid.txt', valid)
+
+    sorted_valid = validator_sort.quick_sort(valid)
+    validator_sort.write('sorted_valid.txt', sorted_valid)
