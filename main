@@ -5,7 +5,7 @@ if __name__ == '__main__':
     print('nice')
     validator = validator_script.Validator()
 
-    validator.load('C:/Users/Admin/Downloads/14.txt')
+    validator.load('C:/Users/Admin/Downloads/12.txt')
     valid = validator.validate()
     validator_script.write('valid.txt', valid)
 
